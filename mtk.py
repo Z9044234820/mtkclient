@@ -9,7 +9,7 @@ info = "MTK Flash/Exploit Client Public V2.0.1 (c) B.Kerler 2018-2024"
 cmds = {
     "printgpt": "Print GPT Table information",
     "gpt": "Save gpt table to given directory",
-    "r": "Read flash to filename",
+    "r": "Read partition to filename",
     "rl": "Read all partitions from flash to a directory",
     "rf": "Read whole flash to file",
     "rs": "Read sectors starting at start_sector to filename",
@@ -59,7 +59,7 @@ def main():
 
     parser_printgpt = subparsers.add_parser("printgpt", help="Print GPT Table information")
     parser_gpt = subparsers.add_parser("gpt", help="Save gpt table to given directory")
-    parser_r = subparsers.add_parser("r", help="Read flash to filename")
+    parser_r = subparsers.add_parser("r", help="Read partition to filename")
     parser_rl = subparsers.add_parser("rl", help="Read all partitions from flash to a directory")
     parser_rf = subparsers.add_parser("rf", help="Read whole flash to file")
     parser_rs = subparsers.add_parser("rs", help="Read sectors starting at start_sector to filename")
